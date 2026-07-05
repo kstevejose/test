@@ -65,8 +65,19 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+    
   ],
-
+  plugins: [
+    [
+      '@cmfcmf/docusaurus-search-local',
+      {
+        indexDocs: true,
+        indexBlog: true,
+        indexPages: false,
+        language: "en",
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
